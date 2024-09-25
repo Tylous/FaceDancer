@@ -1,0 +1,20 @@
+[package]
+name = "FaceDancer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+
+clap = { version = "4.1", features = ["derive"] }
+digest = "0.9.0"
+sha2 = "0.9.5"
+rand = "0.8.5"
+rand_chacha = "0.3.1"
+
+
+lib = { path = "lib" }
+build = { path = "build" }
+exports = { path = "exports" }

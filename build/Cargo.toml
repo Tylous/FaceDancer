@@ -1,0 +1,17 @@
+[package]
+name = "build"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.4"
+argh = "0.1"
+dll2shell = { git = "https://github.com/Teach2Breach/dll2shell" }
+
+lib = { path = "../lib" }
+
+[lib]
+name = "build"
+path = "src/build.rs"
