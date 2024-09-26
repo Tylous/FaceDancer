@@ -16,7 +16,7 @@ FaceDancer is an exploitation tool aimed at creating hijackable, proxy-based DLL
 
 FaceDancer contains numerous methods for performing DLL hijacking. These DLLs take advantage of either weak permissions on installation folders or COM-based system DLL image loading to load a malicious version of a legitimate DLL. Once loaded, the DLL executes the embedded shellcode while proxying valid requests for DLL functions to the legitimate DLL. This is done using a .def file to map the valid requests to the correct DLL, allowing a low-privilege user to proxy a legitimate DLL through a malicious one. This bypasses application whitelisting controls as FaceDancer targets native processes needed for standard operation, making it effective for initial access or persistence.
 
-FaceDancer contains zero evasion techniques. FaceDancer’s sole focus is discovering and generating DLLs for proxying. It is important that the inputted DLL contains all the necessary evasion techniques. For more information about the techniques and how they are discovered, please see the blog.
+FaceDancer contains zero evasion techniques. FaceDancer’s sole focus is discovering and generating DLLs for proxying. It is important that the inputted DLL contains all the necessary evasion techniques. For more information about the techniques and how they are discovered, please see my [blog](https://www.blackhillsinfosec.com/a-different-take-on-dll-hijacking/).
 
 
 
